@@ -28,28 +28,28 @@ const Contract = () => {
             <form ref={form} className="contract-from p-10 mt-16 space-y-5" onSubmit={handleSubmit(onSubmit)}>
                 <div data-aos="zoom-in-right" className="form-control">
                     <label className="label">
-                        <span className="label-text font-serif text-base uppercase">Your Name</span>
+                        <span className="label-text  text-base uppercase">Your Name</span>
                     </label>
                     <input type="text" name="name" {...register("name", { required: true })} className="input rounded input-bordered w-full" />
                     {errors.name && <span className="text-red-500 mt-1">Name is required</span>}
                 </div>
                 <div data-aos="zoom-in-right" className="form-control">
                     <label className="label">
-                        <span className="label-text font-serif text-base uppercase">Email</span>
+                        <span className="label-text  text-base uppercase">Email</span>
                     </label>
                     <input type="email" {...register("email", { required: true })} className="input rounded input-bordered w-full" />
                     {errors.email && <span className="text-red-500 mt-1">Email is required</span>}
                 </div>
                 <div data-aos="zoom-in-right" className="form-control">
                     <label className="label">
-                        <span className="label-text font-serif text-base uppercase">Subject</span>
+                        <span className="label-text  text-base uppercase">Subject</span>
                     </label>
                     <input type="text" name="subject" {...register("subject", { required: true })} className="input rounded input-bordered w-full" />
                     {errors.subject && <span className="text-red-500 mt-1">Subject is required</span>}
                 </div>
                 <div data-aos="zoom-in-right" className="form-control">
                     <label className="label">
-                        <span className="label-text font-serif text-base uppercase">Your Message</span>
+                        <span className="label-text  text-base uppercase">Your Message</span>
                     </label>
                     <textarea name="message" {...register("message", { required: true })} className="textarea textarea-bordered textarea-lg w-full rounded" ></textarea>
                     {errors.message && <span className="text-red-500 mt-1">Message is required</span>}

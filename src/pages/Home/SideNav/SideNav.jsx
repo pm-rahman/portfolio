@@ -1,10 +1,8 @@
 import { Icon } from "@iconify/react";
-import useTheme from "../../../hooks/useTheme";
 
 const SideNav = () => {
-    const { theme } = useTheme();
     return (
-        <ul className={`menu hidden xl:block absolute top-[22%] -right-7 max-w-fit bg-base-100 py-4 px-0 rounded-full text-xl justify-center border ${theme !== "light" && "border-zinc-400 text-"}`}>
+        <ul className="menu my_card hidden xl:block absolute top-[22%] -right-6 max-w-fit bg-base-100 py-4 px-0 rounded-full text-xl justify-center">
             <li>
                 <a href="#home" className="tooltip tooltip-right" data-tip="Home">
                     <Icon icon="heroicons-outline:home" />

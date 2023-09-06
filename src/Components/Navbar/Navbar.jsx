@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import ActiveLink from "../ActiveLink/ActiveLink";
+import { Link, NavLink } from "react-router-dom";
+// import ActiveLink from "../ActiveLink/ActiveLink";
 import profile from "../../assets/profile.jpg"
 import { useState } from "react";
 import { Icon } from "@iconify/react";
@@ -10,13 +10,13 @@ const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
     const [isNavShow, setIsNavShow] = useState(false);
     const scrollStart = () => {
-        setSticky(window.scrollY > 195);
+        setSticky(window.scrollY > 105);
     }
     window.addEventListener('scroll', scrollStart);
 
     const navLink = <>
-        <li><ActiveLink to='/'><Icon className="text-xl" icon="heroicons-outline:home" /><span>Home</span></ActiveLink></li>
-        <li><ActiveLink to='/projects'><Icon className="text-xl" icon="fa-regular:chart-bar" /><span>Projects</span></ActiveLink></li>
+        <li><NavLink to='/'><Icon className="text-xl" icon="heroicons-outline:home" /><span>Home</span></NavLink></li>
+        <li><NavLink to='/projects'><Icon className="text-xl" icon="fa-regular:chart-bar" /><span>Projects</span></NavLink></li>
     </>
     return (
         <div className={`navbar px-4 md:px-8 lg:px-16 uppercase bg-base-100 border-b ${isSticky && `sticky top-0 z-30 shadow-lg border-b-0 shadow-b  ${theme !== 'light' ? "shadow-black" : "shadow-slate-300"}`} ${theme !== 'light' && 'border-zinc-600'}`}>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <label className="btn pl-0 btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul className={`absolute top - 11 duration - 500 ease - out ${isNavShow ? "left-0" : "-left-72"} menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 border border-zinc-300 rounded-md w-52`}>
+                    <ul className={`absolute top-11 duration-500 ease-out ${isNavShow ? "left-0" : "-left-72"} menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 border border-zinc-300 rounded-md w-52`}>
                         {navLink}
                     </ul>
                 </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 <div className="hidden lg:flex">
-                    <ul className="menu font-serif menu-horizontal">
+                    <ul className="menu  menu-horizontal">
                         {navLink}
                     </ul>
                 </div>

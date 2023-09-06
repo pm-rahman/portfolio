@@ -6,15 +6,15 @@ const Sidebar = () => {
     const { theme } = useTheme();
     return (
         <div id="slideBar" className="xl:sticky top-32 z-20 left-0">
-            <div className={`border relative rounded p-10 w-[100%] md:w-[80%] lg:w-[70%] xl:w-[370px] xl:mr-auto xl:ml-0 mr-auto ml-auto ${theme !== 'light' && 'border-zinc-600'}`}>
-                <figure className="rounded overflow-hidden"><img src={profile} alt="" /></figure>
+            <div className={`my_card relative rounded box-border p-10 w-[100%] md:w-[80%] lg:w-[70%] xl:w-[370px] xl:mr-auto xl:ml-0 mr-auto ml-auto ${theme !== 'light' && 'border-zinc-600'}`}>
+                <figure className=" rounded overflow-hidden"><img src={profile} alt="" /></figure>
                 <div className="mt-6">
-                    <h3 className={`${theme !== "light" && "text-white"} font-semibold text-2xl uppercase`}>Mokhlesur Rahman</h3>
-                    <h4 className={`${theme !== "light" && "text-white"} text-sm sm:text-base font-mono flex items-center gap-1`}><Icon className="mt-1 text-base w-5" icon="fa-solid:envelope" /> mdmokhlesurrahman018@gmail.com</h4>
+                    <h3 className={`${theme !== "light" && "text-white"}  text-xl sm:text-2xl capitalize`}>Mokhlesur Rahman</h3>
+                    <h4 className="sm:text-base font-mono flex items-center gap-1"><Icon className="mt-1 text-base w-5" icon="fa-solid:envelope" /> mdmokhlesurrahman018@gmail.com</h4>
                     <h4 className=" text-sm sm:text-base font-mono flex items-center gap-1"><Icon className="text-lg w-5" icon="heroicons-outline:phone" />+8801818886577</h4>
                     <h4 className=" text-sm sm:text-base font-mono flex items-center gap-1"><Icon className="text-lg w-5" icon="heroicons-outline:location-marker" />Dhaka,Bangladesh</h4>
                     <a href="Mokhlesur-Rahman-resume.pdf" download="Mokhlesur-Rahman-resume.pdf">
-                        <button className="btn w-full mt-2 text-white bg-red-600 hover:bg-red-700"><Icon icon="fa-solid:download" /> Download Resume</button>
+                        <button className="btn w-full mt-2 link_btn hover:text-sky-600"><Icon icon="fa-solid:download" /> Download Resume</button>
                     </a>
                 </div>
                 <SideNav />

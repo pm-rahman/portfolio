@@ -3,11 +3,38 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #ef4444 !important;
+    --primary-color: #0ea5e9 !important;
+    --light-primary-color: #0284c7 !important;
 }
 
 * {
     scroll-behavior: smooth;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400px;
+    color: rgb(116, 116, 116);
+}
+
+[data-theme="forest"] p {
+    color: rgb(155, 155, 155);
+}
+
+/* active link */
+a.active {
+    color: var(--primary-color) !important;
+}
+
+/* btn shadow */
+[data-theme="forest"] .btn {
+    border-radius: 9px !important;
+}
+
+.link_btn {
+    border-radius: 5px;
+    padding: 5px 15px;
 }
 
 /* scroll bar style */
@@ -17,7 +44,6 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 }
 
@@ -27,9 +53,27 @@
     border-radius: 10px;
 }
 
+.progress::-moz-progress-bar {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.progress:indeterminate {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #de2d2d !important;
+    background: var(--light-primary-color) !important;
+}
+
+.progress::-moz-progress-bar:hover {
+    background: var(--light-primary-color) !important;
+}
+
+.progress:indeterminate:hover {
+    background: var(--light-primary-color) !important;
 }
 
 .menu a,
@@ -43,13 +87,29 @@
     background-color: transparent !important;
 }
 
-[data-theme="forest"] .btn {
-    border-radius: 9px !important;
+[data-theme="light"] .menu a:hover {
+    color: var(--light-primary-color);
+    background-color: transparent !important;
 }
+
+[data-theme="light"] .footer a:hover {
+    color: var(--light-primary-color);
+}
+
+.menu a:hover,
+.footer a:hover {
+    color: var(--primary-color);
+    background-color: transparent !important;
+}
+
 
 #skills .tooltip.tooltip {
     --tooltip-color: var(--primary-color);
     --tooltip-text-color: white;
+}
+
+[data-theme="light"] #skills .tooltip.tooltip {
+    --tooltip-color: var(--light-primary-color);
 }
 
 .tooltip:before,
@@ -63,115 +123,91 @@
     left: 40px;
 }
 
-.progress {
-    box-shadow: inset 3px 3px 3px -1px rgba(10, 99, 169, .6)
-}
 
 .progress::-moz-progress-bar {
     background-color: var(--primary-color);
     border-radius: 3px;
-    box-shadow: inset 2px 2px 2px -1px rgba(10, 99, 169, .6)
+}
+
+[data-theme="light"] .progress::-moz-progress-bar {
+    background-color: var(--light-primary-color);
 }
 
 .progress:indeterminate {
     --progress-color: var(--primary-color);
-    border-radius: 3px;
-    box-shadow: inset 2px 2px 2px -1px rgba(10, 99, 169, .6)
+    border-radius: 4px;
+}
+
+[data-theme="light"] .progress:indeterminate {
+    background-color: var(--light-primary-color);
 }
 
 .progress::-webkit-progress-value {
     background-color: var(--primary-color);
     border-radius: 3px;
-    box-shadow: 2px 2px 2px -1px rgba(10, 99, 169, .6)
 }
 
-
-.contract-from {
-    box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.7), -1px -3px 4px 1px rgba(0, 0, 0, 0.7);
-}
-
-[data-theme="light"] .contract-from {
-    box-shadow: 1px 4px 5px 1px rgba(214, 214, 214, 0.7), -1px -3px 4px 1px rgba(214, 214, 214, 0.7);
-}
-
-.form-control input,
-textarea {
-    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
-}
-
-[data-theme="light"] .form-control input,
-[data-theme="light"] .form-control textarea {
-    box-shadow: 5px 5px 5px -3px rgba(235, 235, 235, 0.7) inset, -1px -3px 3px -2px rgba(176, 176, 176, 0.2) inset;
-}
-
-.contract-from .btn {
-    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7), -1px -3px 3px -2px rgba(255, 255, 255, 0.2);
-}
-
-[data-theme="light"] .contract-from .btn {
-    box-shadow: 1px 1px 1px 1px rgba(214, 214, 214, 0.7), -1px 2px 1px 1px rgba(214, 214, 214, 0.7);
+[data-theme="light"] .progress::-webkit-progress-value {
+    background-color: var(--light-primary-color);
 }
 
 /* project page */
 .swiper-button-prev {
     margin-top: 2px !important;
-    width: 30px !important;
-    height: 30px !important;
+    width: 25px !important;
+    height: 25px !important;
 }
 
 .swiper-button-next {
     margin-top: 2px !important;
-    width: 30px !important;
-    height: 30px !important;
+    width: 25px !important;
+    height: 25px !important;
 }
 
 .swiper-button-prev::after {
-    font-size: 30px !important;
+    font-size: 25px !important;
 }
 
 .swiper-button-next::after {
-    font-size: 30px !important;
+    font-size: 25px !important;
 }
 
-.project {
-    box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.7) inset, -1px -3px 4px 1px rgba(0, 0, 0, 0.7) inset;
-}
-
-[data-theme="light"] .project {
-    box-shadow: 1px 4px 5px 1px rgba(173, 173, 173, 0.7) inset, -1px -3px 4px 1px rgba(128, 128, 128, 0.7) inset;
-}
-
-/* btn shadow */
-.link_btn {
-    border-radius: 5px;
-    padding: 5px 15px;
-    box-shadow: 1px 4px 5px 1px #0c4a6e inset, -1px -3px 4px 1px #082f49 inset;
-}
-
-[data-theme="light"] .link_btn {
-    box-shadow: 1px 2px 2px 1px rgba(157, 156, 156, 0.7) inset, -1px -3px 2px 1px rgba(201, 201, 201, 0.7) inset;
-}
-
-/* scroll */
-.project_description {
-    overflow-y: scroll;
-    mask-image: linear-gradient(to top, transparent, black),
-        linear-gradient(to left, transparent 6px, black 6px);
-    mask-size: 100% 20000px;
-    mask-position: left bottom;
-    -webkit-mask-image: linear-gradient(to top, transparent, black),
-        linear-gradient(to left, transparent 6px, black 6px);
-    -webkit-mask-size: 100% 20000px;
-    -webkit-mask-position: left bottom;
-    transition: mask-position 0.3s, -webkit-mask-position 0.3s;
-}
-
-.project_description:hover {
-    -webkit-mask-position: left top;
-}
 
 @media screen and (max-width:1280px) {
     .max-w-screen {
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header_text {
+        font-size: 26px;
+    }
+
+    #sliderBar h3 {
+        font-size: 26px !important;
+    }
+
+    #slideBar h4 {
+        font-size: 14px !important;
+    }
+
+    #slideBar .p-10,
+    #contract .p-10 {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .header_text {
+        font-size: 24px;
+    }
+
+    #sliderBar h3 {
+        font-size: 24px !important;
+    }
+
+    #slideBar h4 {
+        font-size: 14px !important;
     }
 }

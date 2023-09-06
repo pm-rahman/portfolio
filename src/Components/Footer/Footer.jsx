@@ -4,7 +4,7 @@ import useTheme from "../../hooks/useTheme";
 const Footer = () => {
     const { theme } = useTheme()
     return (
-        <footer id="footer" className={`footer items-center gap-3 lg:gap-4 p-4 border-t ${theme !== "light" && "border-zinc-600"} `}>
+        <footer id="footer" className={`footer items-center gap-3 lg:gap-4 py-4 border-t ${theme !== "light" && "border-zinc-600"} `}>
             <div className="items-center grid-flow-col">
                 <p >Copyright © 2023 - All rights reserved by Mokhlesur-Rahman</p>
             </div>
