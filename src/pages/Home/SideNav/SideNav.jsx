@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 const SideNav = () => {
     return (
-        <ul className="menu my_card hidden xl:block absolute top-[22%] -right-6 max-w-fit bg-base-100 py-4 px-0 rounded-full text-xl justify-center">
+        <ul className="menu border hidden xl:block absolute top-[22%] -right-7 max-w-fit bg-base-100 py-4 px-0 rounded-full text-xl justify-center">
             <li>
                 <a href="#home" className="tooltip tooltip-right" data-tip="Home">
                     <Icon icon="heroicons-outline:home" />

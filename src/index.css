@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #0ea5e9 !important;
-    --light-primary-color: #0284c7 !important;
+    --primary-color: #ef4444 !important;
+    --light-primary-color: #dc2626 !important;
 }
 
 * {
@@ -150,6 +150,9 @@ a.active {
 [data-theme="light"] .progress::-webkit-progress-value {
     background-color: var(--light-primary-color);
 }
+
+
+
 
 /* project page */
 .swiper-button-prev {

@@ -25,7 +25,7 @@ const Contract = () => {
             <div>
                 <SectionTitle logo="fa-regular:envelope" title='Contract Me' headline="Contact With Me" />
             </div>
-            <form ref={form} className="contract-from p-10 mt-16 space-y-5" onSubmit={handleSubmit(onSubmit)}>
+            <form ref={form} className="bg-base-200 rounded-md contract-from p-10 mt-16 space-y-5" onSubmit={handleSubmit(onSubmit)}>
                 <div data-aos="zoom-in-right" className="form-control">
                     <label className="label">
                         <span className="label-text  text-base uppercase">Your Name</span>
@@ -54,7 +54,7 @@ const Contract = () => {
                     <textarea name="message" {...register("message", { required: true })} className="textarea textarea-bordered textarea-lg w-full rounded" ></textarea>
                     {errors.message && <span className="text-red-500 mt-1">Message is required</span>}
                 </div>
-                <input className="btn bg-base-200 w-full uppercase" value="send message" type="submit" />
+                <input className="btn bg-red-500 text-white hover:bg-red-700 w-full uppercase" value="send message" type="submit" />
             </form>
         </div>
     );
