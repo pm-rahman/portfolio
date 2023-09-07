@@ -1,6 +1,6 @@
 import PageTitle from "../../Components/PageTitle/PageTitle";
 import SingleProject from "./SingleProject/SingleProject";
-import projectData from "../../../public/projectData/projectData";
+import projectData from "/public/projectData/projectData";
 
 const Projects = () => {
   return (
