@@ -7,7 +7,6 @@ const projectData = [
     id: 1,
     thumbnail: freshFood,
     title: "Fresh Food",
-    title2: "Fresh Food",
     description:
       "Explore the taste of Bangladesh through a React-based website. Discover a wide variety of recipes from talented Bangladeshi chefs. With ExpressJS handling the server side and the convenience of Firebase authentication.",
     liveLink: "https://favourite-food-recipes.web.app/",
