@@ -42,25 +42,23 @@ const SingleProject = ({
               {description}
               <span
                 onClick={() => setFullDescription(false)}
-                className="text-red-700 hover:text-red-600 cursor-pointer"
+                className="ml-1 text-red-700 cursor-pointer"
               >
-                {" "}
-                see less..
+                see less
+              </span>
+            </>
+          ) : description.length >= 180 ? (
+            <>
+              {description.split("").slice(0, 180)}{" "}
+              <span
+                onClick={() => setFullDescription(true)}
+                className="ml-1 text-red-700 cursor-pointer"
+              >
+                see more
               </span>
             </>
           ) : (
-            description.length >= 180 && (
-              <>
-                {" "}
-                {description.split("").slice(0, 180)}{" "}
-                <span
-                  onClick={() => setFullDescription(true)}
-                  className="text-red-700 hover:text-red-700 cursor-pointer"
-                >
-                  see more
-                </span>
-              </>
-            )
+            <>{description} </>
           )}
         </p>
         <div className="flex justify-between mt-4">
