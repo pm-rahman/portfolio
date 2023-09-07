@@ -37,7 +37,7 @@ const skills = [
     },
     {
         id:5,
-        title:"javascript ",
+        title:"javascript",
         logo:js
     },
     {
