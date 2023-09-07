@@ -22,9 +22,9 @@ const SingleProject = ({
       <div
         className={`p-4 rounded-b ${theme !== "light" && "border-zinc-500"}`}
       >
-        <h2 className="text-xl inline-block text-red-500 font-semibold uppercase">
+        <h2 className="text-xl inline-block text-red-700 font-semibold uppercase">
           {title}
-          <span className="text-red-500">
+          <span className="text-red-700">
             <Typewriter
               words={[""]}
               loop={0}
@@ -42,7 +42,7 @@ const SingleProject = ({
               {description}
               <span
                 onClick={() => setFullDescription(false)}
-                className="text-red-500 hover:text-red-600 cursor-pointer"
+                className="text-red-700 hover:text-red-600 cursor-pointer"
               >
                 {" "}
                 see less..
@@ -55,7 +55,7 @@ const SingleProject = ({
                 {description.split("").slice(0, 180)}{" "}
                 <span
                   onClick={() => setFullDescription(true)}
-                  className="text-red-500 hover:text-red-700 cursor-pointer"
+                  className="text-red-700 hover:text-red-700 cursor-pointer"
                 >
                   see more
                 </span>
@@ -64,7 +64,7 @@ const SingleProject = ({
           )}
         </p>
         <div className="flex justify-between mt-4">
-          <div className="flex items-center gap-[2px] px-3 py-2 bg-red-500 hover:bg-red-700 rounded text-white font-semibold">
+          <div className="flex items-center gap-[2px] px-3 py-2 bg-red-700 hover:bg-red-800 rounded text-white font-semibold">
             <Icon icon="heroicons-outline:link" />
             <a target="_blank" rel="noreferrer" href={liveLink}>
               <span>View Project</span>

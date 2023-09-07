@@ -11,7 +11,7 @@ const Slider = () => {
             </div>
             <h4 className="mb-5 font-light uppercase">Welcome</h4>
             <h1 className={`header_text text-3xl sm:text-4xl md:text-5xl mb-5 font-light ${theme !== "light" && "text-white"}`}>Hello! {"I'm"} <br className="sm:hidden"/> Mokhlesur Rahman <br className="hidden md:block" />
-                <span className="text-red-500 block">
+                <span className="text-red-700 block">
                     <Typewriter
                         words={['a Developer.','a Designer.', 'a React Specialist.','a MERN stack Developer.']}
                         loop={0}

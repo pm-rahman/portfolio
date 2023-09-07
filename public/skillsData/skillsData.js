@@ -56,21 +56,26 @@ const skills = [
     },
     {
         id:10,
+        title:"Firebase",
+        logo:"../../src/assets/skillsLogo/firebase.png"
+    },
+    {
+        id:11,
         title:"Figma",
         logo:"../../src/assets/skillsLogo/figma.png"
     },
     {
-        id:11,
+        id:12,
         title:"npm",
         logo:"../../src/assets/skillsLogo/npm.png"
     },
     {
-        id:11,
+        id:13,
         title:"photoshop",
         logo:"../../src/assets/skillsLogo/photoshop.png"
     },
     {
-        id:11,
+        id:14,
         title:"postman",
         logo:"../../src/assets/skillsLogo/postman.png"
     },

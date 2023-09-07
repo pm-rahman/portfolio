@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #ef4444 !important;
-    --light-primary-color: #dc2626 !important;
+    --primary-color: #b91c1c !important;
+    --light-primary-color: #991b1b !important;
 }
 
 * {
@@ -115,44 +115,14 @@ a.active {
 .tooltip:before,
 .tooltip-top:before {
     left: 40px;
-    width: 80px;
+    display: inline-block;
+    background-color: var(--primary-color);
 }
 
 .tooltip:after,
 .tooltip-top:after {
     left: 40px;
 }
-
-
-.progress::-moz-progress-bar {
-    background-color: var(--primary-color);
-    border-radius: 3px;
-}
-
-[data-theme="light"] .progress::-moz-progress-bar {
-    background-color: var(--light-primary-color);
-}
-
-.progress:indeterminate {
-    --progress-color: var(--primary-color);
-    border-radius: 4px;
-}
-
-[data-theme="light"] .progress:indeterminate {
-    background-color: var(--light-primary-color);
-}
-
-.progress::-webkit-progress-value {
-    background-color: var(--primary-color);
-    border-radius: 3px;
-}
-
-[data-theme="light"] .progress::-webkit-progress-value {
-    background-color: var(--light-primary-color);
-}
-
-
-
 
 /* project page */
 .swiper-button-prev {

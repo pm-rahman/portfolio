@@ -14,7 +14,7 @@ const Sidebar = () => {
                     <h4 className=" text-sm sm:text-base font-mono flex items-center gap-1"><Icon className="text-lg w-5" icon="heroicons-outline:phone" />+8801818886577</h4>
                     <h4 className=" text-sm sm:text-base font-mono flex items-center gap-1"><Icon className="text-lg w-5" icon="heroicons-outline:location-marker" />Dhaka,Bangladesh</h4>
                     <a href="Mokhlesur-Rahman-resume.pdf" download="Mokhlesur-Rahman-resume.pdf">
-                        <button className="btn text-white bg-red-500 hover:bg-red-700 w-full mt-2 link_btn"><Icon icon="fa-solid:download" /> Download Resume</button>
+                        <button className="btn text-white bg-red-700 hover:bg-red-800 w-full mt-2 link_btn"><Icon icon="fa-solid:download" /> Download Resume</button>
                     </a>
                 </div>
                 <SideNav />
