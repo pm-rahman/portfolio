@@ -1,12 +1,12 @@
-import fovoriteRecipes from "/src/assets/FreshFood/freshFood-1.jpg"
+import freshFood from "/src/assets/FreashFood.jpg"
 import travel from "/src/assets/Travel-community.jpg"
 import littleJoyFull from "/src/assets/Little-JoyFull/little-joyfull-1.jpg"
 import footballDen from "/src/assets/Football-Den/Football-Den-1.jpg"
 const projectData = [
   {
     id: 1,
-    thumbnail: fovoriteRecipes,
-    title: "Favorite Food Recipes",
+    thumbnail: freshFood,
+    title: "Fresh Food",
     description:
       "Explore the taste of Bangladesh through a React-based website. Discover a wide variety of recipes from talented Bangladeshi chefs. With ExpressJS handling the server side and the convenience of Firebase authentication.",
     liveLink: "https://favourite-food-recipes.web.app/",
