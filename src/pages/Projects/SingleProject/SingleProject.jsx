@@ -9,8 +9,7 @@ const SingleProject = ({
   title,
   description,
   liveLink,
-  clientRepo,
-  serverRepo,
+  github=[]
 }) => {
   const [fullDescription, setFullDescription] = useState(false);
   const { theme } = useTheme();
@@ -70,23 +69,18 @@ const SingleProject = ({
           </div>
           <div className="px-2 py-1 rounded-md flex items-center">
             <Icon className="text-lg" icon="fa-brands:github" />
-            <a
-              className="ml-2 hover:text-red-600"
-              target="_blank"
-              rel="noreferrer"
-              href={clientRepo}
-            >
-              Client
-            </a>
-            <div className="px-1">|</div>
-            <a
-              className="hover:text-red-600"
-              target="_blank"
-              rel="noreferrer"
-              href={serverRepo}
-            >
-              Server
-            </a>
+            {
+              github?.map(item=><a
+              key={item?.id}
+                className="githubLink capitalize flex items-center gap-1"
+                target="_blank"
+                rel="noreferrer"
+                href={item?.link}
+              >
+                {item?.title}<Icon className="text-sm" icon="heroicons-outline:link" />
+              </a>)
+            }
+            
           </div>
         </div>
       </div>

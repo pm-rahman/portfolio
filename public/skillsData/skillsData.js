@@ -51,47 +51,47 @@ const skills = [
         logo:nodejs
     },
     {
-        id:7,
+        id:8,
         title:"express JS",
         logo:expressJS
     },
     {
-        id:7,
+        id:9,
         title:"mongoDB",
         logo:mongodb
     },
     {
-        id:8,
+        id:10,
         title:"next JS",
         logo:nextJs
     },
     {
-        id:9,
+        id:11,
         title:"GitHub",
         logo:github
     },
     {
-        id:10,
+        id:12,
         title:"Firebase",
         logo:firebase
     },
     {
-        id:11,
+        id:13,
         title:"Figma",
         logo:figma
     },
     {
-        id:12,
+        id:14,
         title:"npm",
         logo:npm
     },
     {
-        id:13,
+        id:15,
         title:"photoshop",
         logo:photoshop
     },
     {
-        id:14,
+        id:16,
         title:"postman",
         logo:postman
     },

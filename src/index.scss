@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --primary-color: #b91c1c !important;
-    --light-primary-color: #991b1b !important;
-}
+$primary-color-light: #d52626 !important;
+$primary-color: #b91c1c !important;
+$primary-color-deep: #991b1b !important;
 
 * {
     scroll-behavior: smooth;
@@ -23,8 +22,8 @@ p {
 }
 
 /* active link */
-a.active {
-    color: var(--primary-color) !important;
+.navbar a.active {
+    color: $primary-color-light;
 }
 
 /* btn shadow */
@@ -49,31 +48,24 @@ a.active {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: $primary-color;
     border-radius: 10px;
 }
 
 .progress::-moz-progress-bar {
-    background: var(--primary-color);
+    background: $primary-color;
     border-radius: 10px;
 }
 
 .progress:indeterminate {
-    background: var(--primary-color);
+    background: $primary-color;
     border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--light-primary-color) !important;
-}
 
-.progress::-moz-progress-bar:hover {
-    background: var(--light-primary-color) !important;
-}
-
-.progress:indeterminate:hover {
-    background: var(--light-primary-color) !important;
+.progress:hover {
+    background: $primary-color-deep !important;
 }
 
 .menu a,
@@ -83,40 +75,40 @@ a.active {
 
 .menu a:hover,
 .footer a:hover {
-    color: var(--primary-color);
+    color: $primary-color;
     background-color: transparent !important;
 }
 
 [data-theme="light"] .menu a:hover {
-    color: var(--light-primary-color);
+    color: $primary-color-deep;
     background-color: transparent !important;
 }
 
 [data-theme="light"] .footer a:hover {
-    color: var(--light-primary-color);
+    color: $primary-color-deep;
 }
 
 .menu a:hover,
 .footer a:hover {
-    color: var(--primary-color);
+    color: $primary-color;
     background-color: transparent !important;
 }
 
 
 #skills .tooltip.tooltip {
-    --tooltip-color: var(--primary-color);
+    --tooltip-color: $primary-color;
     --tooltip-text-color: white;
 }
 
 [data-theme="light"] #skills .tooltip.tooltip {
-    --tooltip-color: var(--light-primary-color);
+    --tooltip-color: $primary-color-deep;
 }
 
 .tooltip:before,
 .tooltip-top:before {
     left: 40px;
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
 }
 
 .tooltip:after,
@@ -124,25 +116,25 @@ a.active {
     left: 40px;
 }
 
-/* project page */
-.swiper-button-prev {
-    margin-top: 2px !important;
-    width: 25px !important;
-    height: 25px !important;
+// project cart section css
+.githubLink{
+    position: relative;
 }
-
-.swiper-button-next {
-    margin-top: 2px !important;
-    width: 25px !important;
-    height: 25px !important;
+.githubLink{
+    margin-left: 12px;
 }
-
-.swiper-button-prev::after {
-    font-size: 25px !important;
+.githubLink:before{
+    content: "|";
+    position: absolute;
+    left: -8px;
+    height: 100%;
+    width: 100%;
 }
-
-.swiper-button-next::after {
-    font-size: 25px !important;
+.githubLink:nth-child(2){
+    margin-left: 6px;
+}
+.githubLink:nth-child(2)::before{
+    content: "";
 }
 
 

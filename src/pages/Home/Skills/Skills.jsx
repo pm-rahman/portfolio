@@ -15,7 +15,7 @@ const Skills = () => {
         headline="My Skills"
       />
       <div className="grid gap-3 mt-8 lg:grid-cols-4 grid-cols-3">
-        {skills.map(skill => (
+        {skills?.map(skill => (
           <SkillCard key={skill?.id} title={skill?.title} logo={skill?.logo} />
         ))}
       </div>
