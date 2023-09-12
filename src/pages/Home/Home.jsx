@@ -3,6 +3,7 @@ import PageTitle from "../../Components/PageTitle/PageTitle";
 import AboutMe from "./AboutMe/AboutMe";
 import Contract from "./Contract/Contract";
 import Education from "./Education/Education";
+import MyWork from "./MyWork/MyWork";
 import Sidebar from "./Sidebar/Sidebar";
 import Skills from "./Skills/Skills";
 import Slider from "./Slider/Slider";
@@ -23,6 +24,7 @@ const Home = () => {
           <Skills />
           <Education />
           <Training />
+          <MyWork/>
           <Contract />
         </div>
       </div>

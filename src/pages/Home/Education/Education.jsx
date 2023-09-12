@@ -12,7 +12,7 @@ const Education = () => {
         title="My education"
         headline="My education"
       />
-      <div className="grid md:grid-cols-2 gap-3 mt-10">
+      <div className="grid md:grid-cols-2 gap-3 mt-10 overflow-hidden">
         <GraduateCard
           year="july, 2018 - march, 2023"
           title="Diploma In Computer Science And Technology"

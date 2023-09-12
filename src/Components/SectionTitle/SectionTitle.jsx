@@ -9,7 +9,7 @@ const SectionTitle = ({ logo, title, headline }) => {
                 <Icon className="text-base text-red-500" icon={logo} />
                 <span className="uppercase text-base">{title}</span>
             </div>
-            <h1 className={`capitalize header_text text-3xl lg:text-4xl ${theme !== "light" && "text-white"}`}>{headline}</h1>
+            <h1 className={`capitalize font-normal text-2xl lg:text-4xl ${theme !== "light" && "text-white"}`}>{headline}</h1>
         </>
     );
 };

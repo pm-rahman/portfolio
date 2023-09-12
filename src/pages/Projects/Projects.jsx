@@ -10,17 +10,9 @@ const Projects = () => {
         {projectData.map((project) => (
           <div
             key={project?.id}
-            data-aos="fade-up"
-            data-aos-duration="300"
-            data-aos-easing="ease-in-out"
-            className="my_card"
           >
             <SingleProject
-              slider={project?.thumbnail}
-              title={project?.title}
-              description={project?.description}
-              liveLink={project?.liveLink}
-              github={project?.github}
+              project={project}
             />
           </div>
         ))}

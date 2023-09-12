@@ -4,19 +4,16 @@ import useTheme from "../../../hooks/useTheme";
 import { useState } from "react";
 // import { useState } from "react";
 
-const SingleProject = ({
-  slider,
-  title,
-  description,
-  liveLink,
-  github=[]
-}) => {
+const SingleProject = ({ project }) => {
+  const { thumbnail, title, description, liveLink, github = [] } = project;
   const [fullDescription, setFullDescription] = useState(false);
   const { theme } = useTheme();
   return (
-    <div className="rounded shadow-lg shadow-base-300 overflow-hidden">
+    <div
+      className="rounded shadow-lg shadow-base-300"
+    >
       <figure className="h-48 overflow-hidden">
-        <img src={slider} alt="" />
+        <img src={thumbnail} alt="" />
       </figure>
       <div
         className={`p-4 rounded-b ${theme !== "light" && "border-zinc-500"}`}
@@ -46,7 +43,7 @@ const SingleProject = ({
                 see less
               </span>
             </>
-          ) : description.length >= 180 ? (
+          ) : description?.length >= 180 ? (
             <>
               {description.split("").slice(0, 180)}{" "}
               <span
@@ -61,7 +58,7 @@ const SingleProject = ({
           )}
         </p>
         <div className="flex justify-between mt-4">
-          <div className="flex items-center gap-[2px] px-3 py-2 bg-red-700 hover:bg-red-800 rounded text-white font-semibold">
+          <div className="flex items-center gap-[2px] hover:gap-1 px-3 py-2 bg-red-700 hover:bg-red-800 rounded text-white font-semibold">
             <Icon icon="heroicons-outline:link" />
             <a target="_blank" rel="noreferrer" href={liveLink}>
               <span>View Project</span>
@@ -69,18 +66,18 @@ const SingleProject = ({
           </div>
           <div className="px-2 py-1 rounded-md flex items-center">
             <Icon className="text-lg" icon="fa-brands:github" />
-            {
-              github?.map(item=><a
-              key={item?.id}
+            {github?.map((item) => (
+              <a
+                key={item?.id}
                 className="githubLink capitalize flex items-center gap-1"
                 target="_blank"
                 rel="noreferrer"
                 href={item?.link}
               >
-                {item?.title}<Icon className="text-sm" icon="heroicons-outline:link" />
-              </a>)
-            }
-            
+                {item?.title}
+                <Icon className="text-sm" icon="heroicons-outline:link" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

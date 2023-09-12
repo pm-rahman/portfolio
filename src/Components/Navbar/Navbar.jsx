@@ -17,7 +17,7 @@ const Navbar = () => {
 
     const navLink = <>
         <li><NavLink to='/'><Icon className="text-xl" icon="heroicons-outline:home" /><span>Home</span></NavLink></li>
-        <li><NavLink to='/projects'><Icon className="text-xl" icon="fa-regular:chart-bar" /><span>Projects</span></NavLink></li>
+        <li><NavLink to='/my-work'><Icon className="text-xl" icon="fa-regular:chart-bar" /><span>My Works</span></NavLink></li>
     </>
     return (
         <div className={`navbar px-4 md:px-8 lg:px-16 uppercase bg-base-100 border-b ${isSticky && `sticky top-0 z-30 shadow-lg border-b-0 shadow-b  ${theme !== 'light' ? "shadow-black" : "shadow-slate-300"}`} ${theme !== 'light' && 'border-zinc-600'}`}>

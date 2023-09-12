@@ -25,7 +25,7 @@ p {
 .navbar a.active {
     color: $primary-color-light;
 }
-
+// buttons style
 /* btn shadow */
 [data-theme="forest"] .btn {
     border-radius: 9px !important;
@@ -115,6 +115,7 @@ p {
 .tooltip-top:after {
     left: 40px;
 }
+
 
 // project cart section css
 .githubLink{
