@@ -26,7 +26,7 @@ const Navbar = () => {
                     <label className="btn pl-0 btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul className={`navbar absolute top-11 duration-500 ease-out ${isNavShow ? "left-0" : "-left-72"} menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 border border-zinc-300 rounded-md w-52`}>
+                    <ul className={`absolute top-11 duration-500 ease-out ${isNavShow ? "left-0" : "-left-72"} menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 border border-zinc-300 rounded-md w-52`}>
                         {navLink}
                     </ul>
                 </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 <div className="hidden lg:flex">
-                    <ul className="menu  menu-horizontal">
+                    <ul className="menu menu-horizontal">
                         {navLink}
                     </ul>
                 </div>

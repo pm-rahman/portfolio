@@ -59,7 +59,7 @@ const SingleProject = ({ project }) => {
         </p>
         <div className="flex justify-between mt-4">
           <div className="flex items-center gap-[2px] hover:gap-1 px-3 py-2 bg-red-700 hover:bg-red-800 rounded text-white font-semibold">
-            <Icon icon="heroicons-outline:link" />
+            <Icon icon="hidden sm:inline-block heroicons-outline:link" />
             <a target="_blank" rel="noreferrer" href={liveLink}>
               <span>View Project</span>
             </a>
@@ -75,7 +75,7 @@ const SingleProject = ({ project }) => {
                 href={item?.link}
               >
                 {item?.title}
-                <Icon className="text-sm" icon="heroicons-outline:link" />
+                <Icon className="hidden sm:inline-block text-sm" icon="heroicons-outline:link" />
               </a>
             ))}
           </div>
