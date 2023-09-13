@@ -10,7 +10,8 @@ const SingleProject = ({ project }) => {
   const { theme } = useTheme();
   return (
     <div
-      className="rounded shadow-lg shadow-base-300"
+      className="rounded shadow-lg h-fit shadow-base-300"
+      data-aos="zoom-in-left"
     >
       <figure className="h-48 overflow-hidden">
         <img src={thumbnail} alt="" />
@@ -59,7 +60,7 @@ const SingleProject = ({ project }) => {
         </p>
         <div className="flex justify-between mt-4">
           <div className="flex items-center gap-[2px] hover:gap-1 px-3 py-2 bg-red-700 hover:bg-red-800 rounded text-white font-semibold">
-            <Icon icon="hidden sm:inline-block heroicons-outline:link" />
+            <Icon className="hidden mr-[1px] sm:inline-block" icon="heroicons-outline:link" />
             <a target="_blank" rel="noreferrer" href={liveLink}>
               <span>View Project</span>
             </a>
@@ -69,7 +70,7 @@ const SingleProject = ({ project }) => {
             {github?.map((item) => (
               <a
                 key={item?.id}
-                className="githubLink capitalize flex items-center gap-1"
+                className="githubLink hover:opacity-80 capitalize flex items-center gap-1"
                 target="_blank"
                 rel="noreferrer"
                 href={item?.link}

@@ -10,7 +10,7 @@ const projectData = [
     thumbnail: kutirGhor,
     title: "Kutir Ghor",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo libero ab, eum quam vel adipisci quia quod, accusantium nobis, ullam maxime! Possimus et facilis aperiam? Iure sint eaque iste sed vel fuga optio rem reiciendis illo cum ad eius aperiam, a, excepturi quod quae. Magnam, suscipit atque. Quisquam ipsum magnam eos atque nam, quo molestiae sit natus dignissimos omnis ipsam commodi, porro voluptatibus ad iste harum expedita sed. Eaque facere in inventore impedit iusto aut laboriosam, possimus quo dignissimos.",
+      "This platform is a combination of products from different industries, allowing users to buy or sell their desired products. It focuses on traditional items and provides a user-friendly interface to help customers find what they are looking for with ease. Moreover, the platform offers a variety of unique product ideas to inspire creativity and enhance the shopping experience",
     liveLink: "https://kutir-shilpo.vercel.app/",
     github: [
       {

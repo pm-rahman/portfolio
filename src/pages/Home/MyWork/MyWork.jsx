@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const MyWork = () => {
   return (
-    <div id="my-work" className="mt-16 lg:mt-0" data-aos="slide-up">
+    <div id="my-work" className="mt-16 lg:mt-0">
       <SectionTitle
         logo="fa-solid:user-cog"
         title="My Work"
@@ -16,7 +16,7 @@ const MyWork = () => {
         {projectData.slice(0, 4)?.map((project) => (
           <SingleProject key={project?.id} project={project} />
         ))}
-      </div>
+        </div>
       <div className=" text-center mt-8 lg:mt-10">
         <Link to="/my-work">
           <button className="mx-auto flex items-center gap-4 px-3 py-2 bg-red-700 rounded text-base text-white font-normal hover:gap-5 hover:bg-red-800">
