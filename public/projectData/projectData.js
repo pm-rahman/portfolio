@@ -1,5 +1,5 @@
 import kutirGhor from "/src/assets/kutir-ghor.jpg"
-import freshFood from "/src/assets/FreashFood.jpg"
+import freshFood from "/src/assets/FreshFood.jpg"
 import travel from "/src/assets/Travel-community.jpg"
 import littleJoyFull from "/src/assets/Little-JoyFull/little-joyfull-1.jpg"
 import footballDen from "/src/assets/Football-Den/Football-Den-1.jpg"
