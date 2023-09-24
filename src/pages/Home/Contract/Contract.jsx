@@ -107,7 +107,7 @@ const Contract = () => {
           )}
         </div>
         <Button type="submit" size="full">
-          Send massage <Icon className="text-xl relative top-[1px]" icon="fa-brands:telegram-plane" />
+          Send Massage <Icon className="text-xl relative top-[1px]" icon="fa-brands:telegram-plane" />
         </Button>
       </form>
     </div>

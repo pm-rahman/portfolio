@@ -62,7 +62,6 @@ const SingleProject = ({ project }) => {
         <div className="flex justify-between mt-4">
           <a
             target="_blank"
-            className="font-semibold"
             rel="noreferrer"
             href={liveLink}
           >
