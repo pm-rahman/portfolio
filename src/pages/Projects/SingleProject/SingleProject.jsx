@@ -2,6 +2,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Icon } from "@iconify/react";
 import useTheme from "../../../hooks/useTheme";
 import { useState } from "react";
+import Button from "../../../Components/Button/Button";
 // import { useState } from "react";
 
 const SingleProject = ({ project }) => {
@@ -33,7 +34,7 @@ const SingleProject = ({ project }) => {
             />
           </span>
         </h2>
-        <p className={`my-1 font-serif `}>
+        <p className={`my-1 font-serif`}>
           {fullDescription ? (
             <>
               {description}
@@ -59,13 +60,20 @@ const SingleProject = ({ project }) => {
           )}
         </p>
         <div className="flex justify-between mt-4">
-          <div className="flex items-center gap-[2px] hover:gap-1 px-3 py-2 bg-red-700 hover:bg-red-800 rounded text-white font-semibold">
-            <Icon className="hidden mr-[1px] sm:inline-block" icon="heroicons-outline:link" />
-            <a target="_blank" rel="noreferrer" href={liveLink}>
-              <span>View Project</span>
-            </a>
-          </div>
-          <div className="px-2 py-1 rounded-md flex items-center">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={liveLink}
+          >
+            <Button>
+              <Icon
+                className="hidden mr-[1px] sm:inline-block"
+                icon="heroicons-outline:link"
+              />
+              View Project
+            </Button>
+          </a>
+          <div className="pl-1 py-1 rounded-md flex items-center">
             <Icon className="text-lg" icon="fa-brands:github" />
             {github?.map((item) => (
               <a
@@ -76,7 +84,12 @@ const SingleProject = ({ project }) => {
                 href={item?.link}
               >
                 {item?.title}
-                <Icon className="hidden sm:inline-block text-sm" icon="heroicons-outline:link" />
+                {item?.title !== "github" && (
+                  <Icon
+                    className="hidden sm:inline-block text-sm"
+                    icon="heroicons-outline:link"
+                  />
+                )}
               </a>
             ))}
           </div>
