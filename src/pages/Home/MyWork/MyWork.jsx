@@ -3,6 +3,7 @@ import projectData from "/public/projectData/projectData";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import SingleProject from "../../Projects/SingleProject/SingleProject";
 import { Link } from "react-router-dom";
+import Button from "../../../Components/Button/Button";
 
 const MyWork = () => {
   return (
@@ -19,9 +20,9 @@ const MyWork = () => {
         </div>
       <div className=" text-center mt-8 lg:mt-10">
         <Link to="/my-work">
-          <button className="mx-auto flex items-center gap-4 px-3 py-2 bg-red-700 rounded text-base text-white font-normal hover:gap-5 hover:bg-red-800">
+          <Button size="wide">
             Load More <Icon className="text-base" icon="fa:rotate-left" />
-          </button>
+          </Button>
         </Link>
       </div>
     </div>
