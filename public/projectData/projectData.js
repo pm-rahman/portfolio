@@ -1,10 +1,10 @@
 import kutirGhor from "/src/assets/kutir-ghor.jpg"
 import freshFood from "/src/assets/FreshFood.jpg"
 import travel from "/src/assets/Travel-community.jpg"
+import nextJob from "/src/assets/nextjs-job-board.png"
 import littleJoyFull from "/src/assets/little-joyfull.jpg"
 import footballDen from "/src/assets/football-den.jpg"
 const projectData = [
-  
   {
     id: 1,
     thumbnail: kutirGhor,
@@ -30,6 +30,21 @@ const projectData = [
     github:[
       {id:1,title:"client",link: "https://github.com/pm-rahman/Football-coatch-den-client"},
       {id:2,title:"server",link: "https://github.com/pm-rahman/Football-Coach-Den-Server"}
+    ]
+  },
+  {
+    id: 6,
+    thumbnail: nextJob,
+    title: "Next job board",
+    description:
+      "This job board, developed with Next.js, offers a platform for tech professionals to find various developer positions, including full-time, part-time, contract, and remote roles across different locations. It provides job filters by type and location to simplify the search, connecting talent with job opportunities effectively.",
+    liveLink: "https://portfolio-1f5e4.web.app/my-work",
+    github: [
+      {
+        id:1,
+        title:"github",
+        link:"https://github.com/pm-rahman/nextjs-job-board"
+      }
     ]
   },
   {
